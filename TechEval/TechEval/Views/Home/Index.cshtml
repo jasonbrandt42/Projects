@@ -1,0 +1,18 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>TODO: Write some code that will accept an amount and convert it to the
+appropriate string representation.
+</h2>
+
+@using (Html.BeginForm("ConvertNumber", "Home"))
+{
+    @Html.TextBox("txbxInputNumber")
+
+    <input class="button" id="submit" type="submit" value="Submit" />
+}
+@Model
